@@ -1,0 +1,27 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Bytz.Patterns.Visitation/.vs/Bytz.Patterns.Visitation/FileContentIndex
+/Bytz.Patterns.Visitation/Bytz.Patterns.Visitation/obj
+/Bytz.Patterns.Visitation/Bytz.Patterns.Visitation.Abtractions/bin/Debug/net8.0
+/Bytz.Patterns.Visitation/Bytz.Patterns.Visitation.Abtractions/obj
+/Bytz.Patterns.Visitation/Examples.Patterns.Visitation/obj
+/Bytz.Patterns.Visitation/Tests.Patterns.Visitation/obj
+/Bytz.Patterns.Visitation.Abtractions/bin/Debug/net8.0
+/Bytz.Patterns.Visitation.Abtractions/obj
+/Examples.Patterns.Visitation/bin/Debug/net8.0
+/Examples.Patterns.Visitation/obj
+/Tests.Patterns.Visitation/bin/Debug/net8.0
+/Tests.Patterns.Visitation/obj
+/Bytz.Patterns.Visitation/Bytz.Patterns.Visitation/bin/Debug/net8.0
+*.vspscc
+*.vssscc
+/.vs/Bytz.Patterns.Visitation/DesignTimeBuild
+/.vs/Bytz.Patterns.Visitation/FileContentIndex
+/Bytz.Patterns.Visitation/.vs/Bytz.Patterns.Visitation/v17/.futdcache.v2
+/Bytz.Patterns.Visitation/.vs/Bytz.Patterns.Visitation/v17/TestStore/0
+/Bytz.Patterns.Visitation/.vs/ProjectEvaluation
+/Bytz.Patterns.Visitation/.vs/Bytz.Patterns.Visitation/v17/.suo
+/Bytz.Patterns.Visitation/.vs/Bytz.Patterns.Visitation/DesignTimeBuild/.dtbcache.v2
+/.vs/Bytz.Patterns.Visitation/v17

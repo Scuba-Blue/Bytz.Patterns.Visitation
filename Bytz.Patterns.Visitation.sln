@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bytz.Patterns.Visitation.Abtractions", "Bytz.Patterns.Visitation.Abtractions\Bytz.Patterns.Visitation.Abtractions.csproj", "{A6575917-00C5-4FE1-9BE3-A132C731BB91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Patterns.Visitation", "Examples.Patterns.Visitation\Examples.Patterns.Visitation.csproj", "{5EED7C23-965B-4766-940B-FFB3B7538281}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Patterns.Visitation", "TEsts.Patterns.Visitation\Tests.Patterns.Visitation.csproj", "{C082455A-2970-4AC4-8DFD-D631464B05F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6575917-00C5-4FE1-9BE3-A132C731BB91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6575917-00C5-4FE1-9BE3-A132C731BB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6575917-00C5-4FE1-9BE3-A132C731BB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6575917-00C5-4FE1-9BE3-A132C731BB91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EED7C23-965B-4766-940B-FFB3B7538281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EED7C23-965B-4766-940B-FFB3B7538281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EED7C23-965B-4766-940B-FFB3B7538281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EED7C23-965B-4766-940B-FFB3B7538281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C082455A-2970-4AC4-8DFD-D631464B05F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C082455A-2970-4AC4-8DFD-D631464B05F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C082455A-2970-4AC4-8DFD-D631464B05F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C082455A-2970-4AC4-8DFD-D631464B05F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4220E4F9-B916-4251-84CE-8DEB9E2ECB2F}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://hephaestus/bytz
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Bytz.Patterns.Visitation.Abtractions\\Bytz.Patterns.Visitation.Abtractions.csproj
+		SccProjectName1 = Bytz.Patterns.Visitation.Abtractions
+		SccLocalPath1 = Bytz.Patterns.Visitation.Abtractions
+		SccProjectUniqueName2 = Examples.Patterns.Visitation\\Examples.Patterns.Visitation.csproj
+		SccProjectName2 = Examples.Patterns.Visitation
+		SccLocalPath2 = Examples.Patterns.Visitation
+		SccProjectUniqueName3 = TEsts.Patterns.Visitation\\TEsts.Patterns.Visitation.csproj
+		SccProjectName3 = TEsts.Patterns.Visitation
+		SccLocalPath3 = TEsts.Patterns.Visitation
+	EndGlobalSection
+EndGlobal
