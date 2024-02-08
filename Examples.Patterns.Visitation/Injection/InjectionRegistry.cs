@@ -1,4 +1,5 @@
 ﻿using Bytz.Extensions.DependencyInjection;
+using Bytz.Patterns.Visitation.Abtractions.Contracts;
 using Examples.Patterns.Visitation.Database;
 using Examples.Patterns.Visitation.Repositories.Contracts.Abstractions;
 using Microsoft.EntityFrameworkCore;
@@ -17,8 +18,7 @@ public class InjectionRegistry
     {
         Services = new ServiceCollection();
 
-        Services
-            .Register
+        Services.Register
             (r => r
                 .InThisAssembly()
                 .Implementing<IRepositoryBase>()
@@ -27,15 +27,24 @@ public class InjectionRegistry
                 .ConfigureOrThrow()
             );
 
+        //  register all operations for any visitor
+        Services.Register
+            (r => r
+                .InThisAssembly()
+                .Implementing<IOperationAsync>()
+                .AllInterfaces()
+                .AsTransient()
+                .ConfigureOrThrow()
+            );
+
         Services.Register(r => r.InThisAssembly().BasedOn<DbContext>().WithoutInterfaces().AsScoped().ConfigureOrThrow());
 
-        IConfigurationRoot configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json", false).Build();
+        Configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json", false).Build();
 
         Services.AddDbContext<ApplicationContext>(op =>
         {
-            op.UseSqlServer(configuration.GetConnectionString("ApplicationConnection"));
+            op.UseSqlServer(Configuration.GetConnectionString("ApplicationConnection"));
         });
-
 
         Providers = Services.BuildServiceProvider();
     }
@@ -43,6 +52,8 @@ public class InjectionRegistry
     public static IServiceCollection Services { get; set; }
 
     public static IServiceProvider Providers { get; set; }
+
+    public static IConfiguration Configuration { get; set; }
 
     public static void Start() { }
 }

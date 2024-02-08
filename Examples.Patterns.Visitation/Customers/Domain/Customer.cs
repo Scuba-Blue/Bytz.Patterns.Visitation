@@ -10,6 +10,10 @@ public class Customer
 
     public string CustomerName { get; set; }
 
+    public string Email { get; set; }
+
+    public DateTime? EmailValidatedOn { get; set; }
+
     public DateTime CreatedOn { get; set; }
 
     public CustomerType CustomerTypeItem { get; set; }

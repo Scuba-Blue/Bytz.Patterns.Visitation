@@ -27,7 +27,7 @@ public class CustomerRepository
                 c.CustomerTypeItem.EnumKey == CustomerTypeEnum.Individual.ToString()
                 && c.OrderItems
                     .Any
-                    (o => 
+                    (o =>
                         o.OrderedOn > DateTime.Now.AddMonths(-6)
                         && o.SubTotal > 500m
                     )

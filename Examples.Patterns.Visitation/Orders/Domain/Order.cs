@@ -16,7 +16,7 @@ public class Order
 
     public decimal TotalTax { get; set; }
 
-    public decimal Total { get; set; }    
+    public decimal Total { get; set; }
 
     public Customer CustomerItem { get; set; }
 

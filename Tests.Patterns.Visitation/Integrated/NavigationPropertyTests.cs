@@ -2,7 +2,6 @@
 using Examples.Patterns.Visitation.Database;
 using Examples.Patterns.Visitation.Groceries.Domain;
 using Examples.Patterns.Visitation.Orders.Domain;
-using System.Net.Sockets;
 using Tests.Patterns.Visitation.Abstractions;
 
 namespace Tests.Patterns.Visitation.Integrated;

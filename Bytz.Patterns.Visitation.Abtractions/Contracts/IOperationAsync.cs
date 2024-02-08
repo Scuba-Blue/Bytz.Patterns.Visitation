@@ -1,4 +1,4 @@
-﻿using Bytz.Patterns.Visitation.Abtractions.Basis;
+﻿using Bytz.Patterns.Visitation.Abtractions.Bases;
 
 namespace Bytz.Patterns.Visitation.Abtractions.Contracts;
 

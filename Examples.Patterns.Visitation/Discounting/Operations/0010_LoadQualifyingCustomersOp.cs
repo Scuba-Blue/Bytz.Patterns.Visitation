@@ -1,5 +1,4 @@
 ﻿using Examples.Patterns.Visitation.Customers.Abstractions;
-using System.Net.NetworkInformation;
 
 namespace Examples.Patterns.Visitation.Discounting.Operations;
 

@@ -9,5 +9,5 @@ public abstract class DatabaseRepositoryBase
 )
 : IDatabaseRepository<ApplicationContext>
 {
-    public ApplicationContext Context { get; } = context; 
+    public ApplicationContext Context { get; } = context;
 }

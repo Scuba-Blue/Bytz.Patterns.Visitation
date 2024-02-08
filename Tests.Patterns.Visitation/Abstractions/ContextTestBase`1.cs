@@ -27,7 +27,7 @@ where TContext : DbContext
         }
     }
 
-    public async Task Entity<TEntity>() 
+    public async Task Entity<TEntity>()
     where TEntity : class
     {
         await Context.Set<TEntity>().FirstOrDefaultAsync();

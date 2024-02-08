@@ -1,6 +1,6 @@
 ﻿namespace Examples.Patterns.Visitation.Customers.Abstractions;
 
-public enum CustomerTypeEnum 
+public enum CustomerTypeEnum
 : byte
 {
     Individual = 1,
