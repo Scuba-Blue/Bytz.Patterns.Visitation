@@ -1,24 +1,27 @@
-﻿using Bytz.Patterns.Visitation.Abtractions.Bases;
+﻿using Bytz.Extensions.DependencyInjection.Registration;
+using Bytz.Patterns.Visitation.Abtractions.Bases;
 using Bytz.Patterns.Visitation.Abtractions.Contracts;
 using Bytz.Patterns.Visitation.Abtractions.Extensions;
 using Microsoft.Extensions.DependencyInjection;
+using Tests.Patterns.Visitation.Abstractions.DependencyInjection;
 
-namespace Tests.Patterns.Visitation.Abstractions;
+namespace Tests.Patterns.Visitation.Abstractions.Operations;
 
 /// <summary>
 /// base class for testing operations.
 /// </summary>
 /// <typeparam name="TVisitor"></typeparam>
-public abstract class OperationTestBase<TVisitor>
-: TestBase
+public abstract class VisitorOperationBase<TRegistry, TVisitor>
+: StaticContainerBase<TRegistry>
+where TRegistry : RegistryBase, new()
 where TVisitor : VisitorBase
 {
     /// <summary>
     /// get all operations for tvisitor from the ioc
     /// </summary>
-    public OperationTestBase()
+    public VisitorOperationBase()
     {
-        Operations = Providers.GetServices<IOperationAsync<TVisitor>>();
+        Operations = ServiceProvider.GetServices<IOperationAsync<TVisitor>>();
     }
 
     /// <summary>

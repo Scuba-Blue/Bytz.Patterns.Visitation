@@ -7,7 +7,7 @@ GO
 
 CREATE TABLE Customers.CustomerType
 (
-	CustomerTypeId		TINYINT					NOT NULL	IDENTITY(1, 1)
+	CustomerTypeId		TINYINT					NULL	IDENTITY(1, 1)
 															CONSTRAINT PK_Customers_CustomerType
 															PRIMARY KEY
 ,	EnumKey				VARCHAR(40)				NOT NULL	CONSTRAINT UQ_Customers_CustomerType_EnumKey

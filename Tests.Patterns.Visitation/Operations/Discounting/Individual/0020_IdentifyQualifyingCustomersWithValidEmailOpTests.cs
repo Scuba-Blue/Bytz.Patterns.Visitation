@@ -1,11 +1,12 @@
 ﻿using Examples.Patterns.Visitation.Customers.Domain;
 using Examples.Patterns.Visitation.Discounting.Operations;
-using Tests.Patterns.Visitation.Abstractions;
+using Examples.Patterns.Visitation.Registries;
+using Tests.Patterns.Visitation.Abstractions.Operations;
 
 namespace Tests.Patterns.Visitation.Operations.Discounting.Individual;
 
 public class IdentifyQualifyingCustomersWithValidEmailOpTests
-: OperationTestBase<IndividualDiscountVisitor, IdentifyQualifyingCustomersWithValidEmails>
+: SingleOperationBase<ApplicationRegistry, IndividualDiscountVisitor, IdentifyQualifyingCustomersWithValidEmails>
 {
     [Fact]
     public void Operations_IdentifyQualifyingCustomersWithValidEmails_Operation_LoadQualifyingOp_Can_Instantiate()

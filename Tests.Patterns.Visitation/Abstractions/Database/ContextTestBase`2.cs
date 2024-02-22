@@ -1,15 +1,16 @@
-﻿using Examples.Patterns.Visitation.Customers.Domain;
-using Examples.Patterns.Visitation.Injection;
+﻿using Bytz.Extensions.DependencyInjection.Registration;
+using Examples.Patterns.Visitation.Customers.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Tests.Patterns.Visitation.Abstractions.DependencyInjection;
 
-namespace Tests.Patterns.Visitation.Abstractions;
+namespace Tests.Patterns.Visitation.Abstractions.Database;
 
-public abstract class ContextTestBase<TContext>
-: TestBase
+public abstract class ContextTestBase<TRegistry, TContext>
+: StaticContainerBase<TRegistry>
+where TRegistry : RegistryBase, new()
 where TContext : DbContext
 {
-
     private static TContext _context;
 
     protected static TContext Context
@@ -18,7 +19,7 @@ where TContext : DbContext
         {
             if (_context == null)
             {
-                _context = InjectionRegistry.Providers.GetService<TContext>();
+                _context = ServiceProvider.GetService<TContext>();
 
                 _context.Set<Customer>().FirstOrDefault();
             }

@@ -2,12 +2,13 @@
 using Examples.Patterns.Visitation.Database;
 using Examples.Patterns.Visitation.Groceries.Domain;
 using Examples.Patterns.Visitation.Orders.Domain;
-using Tests.Patterns.Visitation.Abstractions;
+using Examples.Patterns.Visitation.Registries;
+using Tests.Patterns.Visitation.Abstractions.Database;
 
 namespace Tests.Patterns.Visitation.Integrated;
 
 public class EntityMappingTests
-: ContextTestBase<ApplicationContext>
+: ContextTestBase<ApplicationRegistry, ApplicationContext>
 {
     [Fact]
     public async Task Mapping_Customers_Customer()

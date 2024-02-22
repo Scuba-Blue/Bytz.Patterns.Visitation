@@ -1,17 +1,20 @@
-﻿using Bytz.Patterns.Visitation.Abtractions.Bases;
+﻿using Bytz.Extensions.DependencyInjection.Registration;
+using Bytz.Patterns.Visitation.Abtractions.Bases;
 using Bytz.Patterns.Visitation.Abtractions.Contracts;
 using Microsoft.Extensions.DependencyInjection;
+using Tests.Patterns.Visitation.Abstractions.DependencyInjection;
 
-namespace Tests.Patterns.Visitation.Abstractions;
+namespace Tests.Patterns.Visitation.Abstractions.Operations;
 
-public abstract class OperationTestBase<TVisitor, TOperation>
-: OperationTestBase<TVisitor>
+public abstract class SingleOperationBase<TRegistry, TVisitor, TOperation>
+: InstanceContainerBase<TRegistry>
+where TRegistry : RegistryBase, new()
 where TVisitor : VisitorBase, new()
 where TOperation : IOperationAsync<TVisitor>
 {
-    public OperationTestBase()
+    public SingleOperationBase()
     {
-        Operation = Providers.GetService<TOperation>();
+        Operation = ServiceProvider.GetService<TOperation>();
     }
 
     protected TOperation Operation { get; }
@@ -34,7 +37,7 @@ where TOperation : IOperationAsync<TVisitor>
         Action<TVisitor> visitor
     )
     {
-        visitor((Operation.Visitor = new()));
+        visitor(Operation.Visitor = new());
 
         Assert.True(Operation.CanRun);
     }
@@ -44,7 +47,7 @@ where TOperation : IOperationAsync<TVisitor>
         Action<TVisitor> visitor
     )
     {
-        visitor((Operation.Visitor = new()));
+        visitor(Operation.Visitor = new());
 
         Assert.False(Operation.CanRun);
     }

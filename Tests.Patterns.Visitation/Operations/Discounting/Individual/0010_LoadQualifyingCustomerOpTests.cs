@@ -1,10 +1,11 @@
 ﻿using Examples.Patterns.Visitation.Discounting.Operations;
-using Tests.Patterns.Visitation.Abstractions;
+using Examples.Patterns.Visitation.Registries;
+using Tests.Patterns.Visitation.Abstractions.Operations;
 
 namespace Tests.Patterns.Visitation.Operations.Discounting.Individual;
 
 public class LoadQualifyingCustomerOpTests
-: OperationTestBase<IndividualDiscountVisitor, LoadQualifyingCustomersOp>
+: SingleOperationBase<ApplicationRegistry, IndividualDiscountVisitor, LoadQualifyingCustomersOp>
 {
     [Fact]
     public void Operations_IndividualDiscount_Operation_LoadQualifyingOp_Can_Instantiate()
