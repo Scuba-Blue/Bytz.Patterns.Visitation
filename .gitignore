@@ -26,3 +26,8 @@
 /Bytz.Patterns.Visitation/.vs/Bytz.Patterns.Visitation/DesignTimeBuild/.dtbcache.v2
 /.vs/Bytz.Patterns.Visitation/v17
 /.vs/ProjectEvaluation
+/Bytz.Extensions.DependencyInjection/bin
+/Bytz.Extensions.DependencyInjection.Moq/bin
+/Bytz.Extensions.DependencyInjection.Moq/obj
+/Examples.Patterns.Visitation.Abstractions/bin/Debug/net8.0
+/Examples.Patterns.Visitation.Abstractions/obj
