@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>disable</Nullable>
+	<LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Examples.Patterns.Visitation.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bytz.Patterns.Visitation.Abtractions\Bytz.Patterns.Visitation.Abtractions.csproj" />
+    <ProjectReference Include="..\Examples.Patterns.Visitation.Abstractions\Examples.Patterns.Visitation.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Customers\Operations\" />
+    <Folder Include="Groceries\Operations\" />
+    <Folder Include="Orders\Abstractions\" />
+    <Folder Include="Orders\Operations\" />
+    <Folder Include="Orders\Repositories\Abstractions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bytz.Collections.Dispatch" Version="1.8.0" />
+    <PackageReference Include="Bytz.Extensions.DependencyInjection" Version="3.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
+  </ItemGroup>
+
+</Project>

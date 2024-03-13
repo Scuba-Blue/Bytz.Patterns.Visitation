@@ -1,0 +1,14 @@
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\bin\Release\net8.0\Bytz.Extensions.DependencyInjection.deps.json
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\bin\Release\net8.0\Bytz.Extensions.DependencyInjection.dll
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\bin\Release\net8.0\Bytz.Extensions.DependencyInjection.pdb
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\bin\Release\net8.0\Bytz.Extensions.DependencyInjection.xml
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\obj\Release\net8.0\Bytz.Extensions.DependencyInjection.csproj.AssemblyReference.cache
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\obj\Release\net8.0\Bytz.Extensions.DependencyInjection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\obj\Release\net8.0\Bytz.Extensions.DependencyInjection.AssemblyInfoInputs.cache
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\obj\Release\net8.0\Bytz.Extensions.DependencyInjection.AssemblyInfo.cs
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\obj\Release\net8.0\Bytz.Extensions.DependencyInjection.csproj.CoreCompileInputs.cache
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\obj\Release\net8.0\Bytz.Extensions.DependencyInjection.dll
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\obj\Release\net8.0\refint\Bytz.Extensions.DependencyInjection.dll
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\obj\Release\net8.0\Bytz.Extensions.DependencyInjection.xml
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\obj\Release\net8.0\Bytz.Extensions.DependencyInjection.pdb
+C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\obj\Release\net8.0\ref\Bytz.Extensions.DependencyInjection.dll

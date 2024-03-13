@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Nullable>disable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <Authors>M. Douglas Bowan II</Authors>
+        <Copyright>M. Douglas Bowan II</Copyright>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	    <PackageReleaseNotes>
+* upgrading to .NET 8.   
+* added functionality for having common registeries in order to share configurations.  
+  (initially for unit-testing purposes)
+	    </PackageReleaseNotes>
+	    <VersionPrefix>3.0.2</VersionPrefix>
+	    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	    <Description>Allow fluent registration of components with IServiceCollection</Description>
+	    <PackageProjectUrl>https://github.com/Scuba-Blue/Bytz.Extensions.DependencyInjection</PackageProjectUrl>
+	    <PackageReadmeFile>README.md</PackageReadmeFile>
+	    <RepositoryUrl>https://github.com/Scuba-Blue/Bytz.Extensions.DependencyInjection</RepositoryUrl>
+	    <PackageLicenseFile>License.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Contracts\Types\**" />
+    <EmbeddedResource Remove="Contracts\Types\**" />
+    <None Remove="Contracts\Types\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Contracts\IContainer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Bytz.Extensions.DependencyInjection.csproj.vspscc" />
+    <None Remove="Bytz.Extensions.DependencyInjection.csproj.vspscc" />
+    <None Remove="Bytz.Extensions.DependencyInjection.xml" />
+    <None Remove="Documents\License.txt" />
+    <None Remove="Documents\README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Documents\License.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

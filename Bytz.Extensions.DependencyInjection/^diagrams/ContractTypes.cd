@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bytz.Extensions.DependencyInjection.Contracts.OnlyContract">
+    <Position X="7.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContractTypes\OnlyContract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bytz.Extensions.DependencyInjection.Contracts.AllContracts">
+    <Position X="2.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContractTypes\AllContracts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bytz.Extensions.DependencyInjection.Contracts.NoContracts">
+    <Position X="5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContractTypes\NoContracts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bytz.Extensions.DependencyInjection.Contracts._Contract">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContractTypes\_Contract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bytz.Extensions.DependencyInjection.Implementation.BasedOn">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementation\BasedOn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bytz.Extensions.DependencyInjection.Implementation.Implementing">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementation\Implementing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bytz.Extensions.DependencyInjection.Implementation.Implementing&lt;TInterface&gt;">
+    <Position X="7.75" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementation\Implementing`1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bytz.Extensions.DependencyInjection.Implementation.Only">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementation\Only.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bytz.Extensions.DependencyInjection.Implementation._ImplementationType">
+    <Position X="5.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Implementation\_ImplementationType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Bytz.Extensions.DependencyInjection</id>
+    <version>3.0.0</version>
+    <authors>M. Douglas Bowan II</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">License.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/Scuba-Blue/Bytz.Extensions.DependencyInjection</projectUrl>
+    <description>Allow fluent registration of components with IServiceCollection</description>
+    <releaseNotes>* upgrading to .NET 8.   
+* added functionality for having common registeries in order to share configurations.  
+  (initially for unit-testing purposes)</releaseNotes>
+    <copyright>M. Douglas Bowan II</copyright>
+    <repository type="git" url="https://github.com/Scuba-Blue/Bytz.Extensions.DependencyInjection" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\bin\Debug\net8.0\Bytz.Extensions.DependencyInjection.dll" target="lib\net8.0\Bytz.Extensions.DependencyInjection.dll" />
+    <file src="C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\bin\Debug\net8.0\Bytz.Extensions.DependencyInjection.xml" target="lib\net8.0\Bytz.Extensions.DependencyInjection.xml" />
+    <file src="C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\Documents\License.txt" target="\License.txt" />
+    <file src="C:\Development\Bytz\Extensions.DependencyInjection\Source\Bytz.Extensions.DependencyInjection\Documents\README.md" target="\README.md" />
+  </files>
+</package>
